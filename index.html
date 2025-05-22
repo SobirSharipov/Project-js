@@ -32,28 +32,32 @@
             <h1>TASK</h1>
             <button class="btx">X</button>
         </div>
-        <label for="">Title</label><br>
-        <input type="text" class="Addname" placeholder="Placeholder text"><BR></BR>
-        <label for="">Description</label><br>
-        <textarea class="AddLorem" placeholder="Placeholder text"></textarea><BR></BR>
-        <select class="Addselect">
-            <option value="active">Active</option>
-            <option value="inactive">Inactive</option>
-        </select>
-        <button class="btnSave">Save</button>
+        <form class="Addform">
+            <label for="">Title</label><br>
+            <input type="text" name="Addname" class="Addname" placeholder="Placeholder text"><BR></BR>
+            <label for="">Description</label><br>
+            <textarea name="AddLorem" class="AddLorem" placeholder="Placeholder text"></textarea><BR></BR>
+            <select name="Addselect" class="Addselect">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+            <button name="btnSave" class="btnSave">Save</button>
+        </form>
     </dialog>
     <dialog class="Editdialog">
         <div class="car1">
             <h1>TASK</h1>
             <button class="btx1">X</button>
         </div>
-        <input type="text" class="Editname"><BR></BR>
-         <textarea class="EditLorem" placeholder="Placeholder text"></textarea><BR></BR>
-        <select class="Editselect">
-            <option value="active">Active</option>
-            <option value="inactive">Inactive</option>
-        </select>
-        <button class="btnEditSave">Save</button>
+        <form class="Editform">
+            <input type="text" name="Editname" class="Editname"><BR></BR>
+            <textarea name="EditLorem" class="EditLorem" placeholder="Placeholder text"></textarea><BR></BR>
+            <select name="Editselect" class="Editselect">
+                <option value="active">Active</option>
+                <option value="inactive">Inactive</option>
+            </select>
+            <button name="btnEditSave" class="btnEditSave">Save</button>
+        </form>
     </dialog>
     
     <script src="./main.js"></script>

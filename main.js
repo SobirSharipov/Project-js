@@ -42,15 +42,10 @@ class Todolist {
     this.box = document.querySelector(".box");
     this.AddUser = document.querySelector(".AddUser");
     this.Adddialog = document.querySelector(".Adddialog");
-    this.Addname = document.querySelector(".Addname");
-    this.AddLorem = document.querySelector(".AddLorem");
-    this.Addselect = document.querySelector(".Addselect");
-    this.btnSave = document.querySelector(".btnSave");
+    this.Addform=document.querySelector(".Addform")
     this.Editdialog = document.querySelector(".Editdialog");
-    this.Editname = document.querySelector(".Editname");
-    this.EditLorem = document.querySelector(".EditLorem");
-    this.Editselect = document.querySelector(".Editselect");
-    this.btnEditSave = document.querySelector(".btnEditSave");
+    this.Editform = document.querySelector(".Editform");
+    
     this.btx = document.querySelector(".btx");
     this.btx1 = document.querySelector(".btx1");
     this.idx=null
@@ -58,11 +53,12 @@ class Todolist {
     this.btx1.onclick=()=>{
       this.Editdialog.close()
     }
-    this.btnEditSave.onclick = async () => {
+    this.Editform.onsubmit = async (event) => {
+      event.preventDefault()
       let newUsers = {
-        name: this.Editname.value,
-        lorem: this.EditLorem.value,
-        status: this.Editselect.value == "active" ? true : false,
+        name: this.Editform["Editname"].value,
+        lorem: this.Editform  ["EditLorem"].value,
+        status: this.Editform["Editselect"].value == "active" ? true : false,
       };
       try {
         await fetch(`${this.API}/${this.idx}`,{
@@ -83,11 +79,12 @@ class Todolist {
     this.btx.onclick=()=>{
       this.Adddialog.close()
     }
-    this.btnSave.onclick = async () => {
+    this.Addform.onsubmit = async (event) => {
+      event.preventDefault()
       let newUser = {
-        name: this.Addname.value,
-        lorem: this.AddLorem.value,
-        status: this.Addselect.value == "active" ? true : false,
+        name: this. Addform["Addname"].value,
+        lorem: this.Addform["AddLorem"].value,
+        status: this.Addform["Addselect"].value == "active" ? true : false,
       };
       try {
         let respons = await fetch(this.API, {
@@ -169,9 +166,9 @@ class Todolist {
       btnEdit.classList.add("btnEdit")
       btnEdit.onclick = () => {
         this.Editdialog.showModal();
-        this.Editname.value = el.name;
-        this.EditLorem.value = el.lorem;
-        this.Editselect.value = el.status ? "active" : "inactive";
+        this.Editform["Editname"].value = el.name;
+        this.Editform["EditLorem"].value = el.lorem;
+        this.Editform["Editselect"].value = el.status ? "active" : "inactive";
         this.idx=el.id
       };
 
