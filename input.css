@@ -1,0 +1,122 @@
+.size-6{
+    width: 20px;
+}
+body{
+    background: linear-gradient(white,white,rgb(0, 0, 206));
+}
+.All{
+    display: flex;
+    justify-content: space-around;
+}
+.All1{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px;
+    
+}
+.box{
+    display: grid;
+    grid-template-columns:  repeat(2, 2fr);
+    gap: 20px;
+}
+.cardAll{
+    background-color: #FFF9DE;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+}
+.AddUser{
+    border: none;
+    background-color: white;
+    font-size: 40px;
+
+}
+.inp{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.car1{
+    display: flex;
+    justify-content: space-between;
+}
+.btx{
+    border: 0px;
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    
+}
+.btx1{
+    border: 0px;
+    background-color: white;
+    font-size: 20px;
+}
+.Adddialog{
+    width: 500px;
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+.Addname{
+    width: 470px;
+    padding: 10px;
+    font-size: xx-large;
+}
+.AddLorem{
+    width: 450px;
+    padding: 20px;
+     font-size:16px;
+}
+.EditLorem{
+    width: 450px;
+    padding: 20px;
+    font-size:16px;
+}
+.Editname{
+     width: 470px;
+    padding: 10px;
+    font-size: xx-large;
+}
+.Addselect{
+    padding: 10px;
+    width: 100px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    color: blue;
+}
+.btnSave{
+    padding: 10px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.Editselect{
+    padding: 10px;
+    width: 100px;
+    border: 1px solid blue;
+    border-radius: 4px;
+    color: blue;
+}
+.btnEditSave{
+    padding: 10px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btnDelet{
+    border: none;
+    background-color: #FFF9DE;
+    color: red;
+}
+.btnEdit{
+    border: none;
+    background-color:#FFF9DE;
+    
+}
+.inpAll{
+    margin: auto;
+}

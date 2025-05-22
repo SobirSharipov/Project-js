@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./input.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="All">
+        <h1>TODO</h1>
+        <button class="AddUser">+</button>
+    </div>
+    <div class="All1">
+        <div class="inpAll">
+            <input type="color" class="inp">
+            <label for="">work</label><BR></BR>
+            <input type="color" class="inp">
+            <label for="">study</label><BR></BR>
+            <input type="color" class="inp">
+            <label for="">entertainment</label><BR></BR>
+            <input type="color" class="inp">
+            <label for="">family</label><BR></BR>
+            <input type="checkbox">
+            <label for="">Hide done task</label>
+        </div>
+        <div class="box"></div>
+    </div>
+    <dialog class="Adddialog">
+        <div class="car1">
+            <h1>TASK</h1>
+            <button class="btx">X</button>
+        </div>
+        <label for="">Title</label><br>
+        <input type="text" class="Addname" placeholder="Placeholder text"><BR></BR>
+        <label for="">Description</label><br>
+        <textarea class="AddLorem" placeholder="Placeholder text"></textarea><BR></BR>
+        <select class="Addselect">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+        <button class="btnSave">Save</button>
+    </dialog>
+    <dialog class="Editdialog">
+        <div class="car1">
+            <h1>TASK</h1>
+            <button class="btx1">X</button>
+        </div>
+        <input type="text" class="Editname"><BR></BR>
+         <textarea class="EditLorem" placeholder="Placeholder text"></textarea><BR></BR>
+        <select class="Editselect">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+        </select>
+        <button class="btnEditSave">Save</button>
+    </dialog>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
